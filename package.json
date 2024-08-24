@@ -1,0 +1,16 @@
+{
+  "name": "web-components-example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter './packages/**' build",
+    "build:stub": "pnpm --filter './packages/**' build --stub"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
