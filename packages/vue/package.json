@@ -1,26 +1,31 @@
 {
-  "name": "@wattanx/web-components",
+  "name": "@wattanx/web-components-vue",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "unbuild",
-    "build:stub": "unbuild --stub"
+    "build": "vite build",
+    "build:stub": ""
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "lit": "^3.2.0"
+    "vue": "^3.4.38"
   },
   "devDependencies": {
-    "unbuild": "^2.0.0"
+    "@vitejs/plugin-vue": "^5.1.2",
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^4.0.3"
   }
 }

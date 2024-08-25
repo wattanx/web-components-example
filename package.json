@@ -5,12 +5,17 @@
   "type": "module",
   "scripts": {
     "build": "pnpm --filter './packages/**' build",
-    "build:stub": "pnpm --filter './packages/**' build --stub"
+    "build:stub": "pnpm --filter './packages/**' build --stub",
+    "dev:next": "pnpm -C playground/next dev"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.5.4"
+  },
+  "resolutions": {
+    "@wattanx/web-components-react": "workspace:*",
+    "@wattanx/web-components-vue": "workspace:*"
   }
 }
